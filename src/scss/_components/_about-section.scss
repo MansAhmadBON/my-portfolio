@@ -1,0 +1,31 @@
+@import "../_base/vars";
+
+.about-content {
+    &__text {
+        max-width: 700px;
+        font-family: $font-fam-text;
+        font-size: 1.22rem;
+        line-height: 1.75;
+        color: $text-color;
+    }
+}
+
+.wrapper-list {
+    margin-top: 1.35rem;
+    .list-title {
+        color: $special-effect-color;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-family: $font-fam-titles;
+    }
+    .list-facts {
+        margin-top: 10px;
+        &__item {
+            font-family: $font-fam-text;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            color: $text-color;
+            margin-left: 20px;
+        }
+    }
+}

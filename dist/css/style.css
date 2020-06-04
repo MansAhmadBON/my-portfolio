@@ -151,6 +151,25 @@ a {
 .section-header {
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
+  padding: 3.15rem 3.5rem 1.4rem;
+  text-align: right;
+}
+
+.section-header__title {
+  color: #727272;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+
+.section-header__sub-title {
+  display: block;
+  margin-top: 0.55rem;
+  color: #939393;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
 }
 
 .section-header--odd {
@@ -164,6 +183,7 @@ a {
 .section-content {
   -ms-flex-preferred-size: 70%;
       flex-basis: 70%;
+  padding: 3.15rem 3.5rem 1.4rem;
 }
 
 .section-content--odd {
@@ -209,7 +229,6 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 3.15rem 3.5rem 1.4rem;
 }
 
 .main-content {
@@ -281,4 +300,35 @@ a {
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
   color: #939393;
+}
+
+.about-content__text {
+  max-width: 700px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.22rem;
+  line-height: 1.75;
+  color: #939393;
+}
+
+.wrapper-list {
+  margin-top: 1.35rem;
+}
+
+.wrapper-list .list-title {
+  color: #f8bb10;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+}
+
+.wrapper-list .list-facts {
+  margin-top: 10px;
+}
+
+.wrapper-list .list-facts__item {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #939393;
+  margin-left: 20px;
 }
