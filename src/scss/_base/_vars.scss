@@ -1,14 +1,15 @@
 $font-fam-titles: 'Raleway', sans-serif;
 $font-fam-text: 'Roboto', sans-serif;
 
-$main-bg-color: #fff;
-$secondary-bg-color: #fcfcfc;
-$titles-main-bg-color: #fbfbfb;
-$titles-secondary-bg-color: #f8f8f8;
+$bg-section-header--odd: #fbfbfb;
+$bg-section-header--even: #f8f8f8;
+$bg-section-content--odd: #fff;
+$bg-section-content--even: #fcfcfc;
 
-$color-titles: #92aac2;
-$color-text: #9bb0cd;
+$element-title-color: #867278;
+$text-color: #939393;
 
 $special-effect-color: #f8bb10;
+$color-line: #ececec;
 
-$transition: all .2s easy-in;
+$transition: all .2s

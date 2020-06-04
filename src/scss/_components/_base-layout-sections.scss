@@ -1,0 +1,32 @@
+@import "../_base/vars";
+
+.section-container {
+    display: flex;
+}
+
+.section-header {
+    flex-basis: 30%;
+}
+
+.section-header--odd {
+    background-color: $bg-section-header--odd
+}
+
+.section-header--even {
+    background-color: $bg-section-header--even
+}
+
+.section-content {
+    flex-basis: 70%;
+}
+
+.section-content--odd {
+    background-color: $bg-section-content--odd;
+}
+
+.section-content--even {
+    background-color: $bg-section-content--even;
+}
+
+
+
