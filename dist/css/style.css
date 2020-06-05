@@ -229,14 +229,56 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: relative;
+}
+
+.main-box .my-cv {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  width: 180px;
+  height: 50px;
+  border: 1px solid #939393;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  -webkit-transform: translate(-50%, -100%);
+      -ms-transform: translate(-50%, -100%);
+          transform: translate(-50%, -100%);
+}
+
+.main-box .my-cv a {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  color: #727272;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.main-box .my-cv:hover {
+  border: 1px solid #f8bb10;
+}
+
+.main-box .my-cv:hover a {
+  color: #f8bb10;
 }
 
 .main-content {
   height: 130px;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
 }
 
 .main-content__text {
@@ -414,4 +456,88 @@ a {
 
 .progress-bar__line--sketch {
   width: 90%;
+}
+
+.experience-content {
+  padding-bottom: 0;
+}
+
+.experience-section .experience {
+  padding-bottom: 4rem;
+}
+
+.experience {
+  max-width: 800px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  border-left: 2px solid #939393;
+  padding-bottom: 30px;
+}
+
+.experience__header {
+  max-width: 315px;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.experience__date,
+.experience__school {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  font-weight: lighter;
+  color: #939393;
+  letter-spacing: .1em;
+}
+
+.experience__title {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.45;
+  text-transform: uppercase;
+  color: #727272;
+  margin-top: .4rem;
+}
+
+.experience__description {
+  max-width: 400px;
+  width: 100%;
+}
+
+.experience__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: #939393;
+  line-height: 1.45;
+}
+
+.experience::before {
+  content: "";
+  display: block;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #f8bb10;
+  position: absolute;
+  left: -6px;
+}
+
+.education-content {
+  padding-top: 0;
+}
+
+.education-item--teachMeSkills:before {
+  top: 2rem;
+}
+
+.education-item--teachMeSkills .experience__header,
+.education-item--teachMeSkills .experience__description {
+  padding-top: 2rem;
 }

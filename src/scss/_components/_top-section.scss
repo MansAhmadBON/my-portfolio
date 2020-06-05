@@ -23,12 +23,39 @@
 .main-box {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
+    .my-cv {
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        width: 180px;
+        height: 50px;
+        border: 1px solid $text-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: $transition;
+        cursor: pointer;
+        transform: translate(-50%, -100%);
+        a {
+            font-family: $font-fam-titles;
+            font-size: 1rem;
+            color: $text-h2-color;
+            text-transform: uppercase;
+            transition: $transition;
+        }
+        &:hover {
+            border: 1px solid $special-effect-color;
+            a {
+                color: $special-effect-color
+            }
+        }
+    }
 }
 
 .main-content {
     height: 130px;
     align-self: flex-end;
-    flex-basis: 100%;
     &__text {
         font-family: $font-fam-titles;
         font-size: 50px;

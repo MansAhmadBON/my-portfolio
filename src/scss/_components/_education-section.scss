@@ -1,0 +1,14 @@
+@import "../_base/vars";
+
+.education-content {
+    padding-top: 0;
+}
+
+.education-item--teachMeSkills {
+    &:before {
+        top: 2rem
+    }
+    .experience__header, .experience__description {
+        padding-top: 2rem;
+    }
+}
