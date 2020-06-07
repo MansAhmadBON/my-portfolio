@@ -559,9 +559,9 @@ a {
 .portfolio-list__item {
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
-  margin: 20px;
   position: relative;
   overflow: hidden;
+  margin: 20px 20px 20px 0;
 }
 
 .portfolio-list__item:hover {
@@ -630,4 +630,68 @@ a {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: #fff;
+}
+
+.outro-content .wrapper-content {
+  max-width: 800px;
+}
+
+.outro-content__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: #939393;
+  line-height: 1.75;
+}
+
+.outro-content__text--bottom {
+  margin-top: 20px;
+}
+
+.outro-content__text--bottom::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #f8bb10;
+  margin-top: 40px;
+}
+
+.footer-page {
+  margin-top: 7em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-page .main-content {
+  display: inline-block;
+}
+
+.footer-page .social-links {
+  max-width: 350px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer-page .social-links__link {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #939393;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.footer-page .social-links__link:hover {
+  color: #f8bb10;
 }

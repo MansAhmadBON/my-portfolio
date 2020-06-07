@@ -1,0 +1,49 @@
+@import "../_base/vars";
+
+.outro-content {
+    .wrapper-content {
+        max-width: 800px;
+    }
+    &__text {
+        font-family: $font-fam-text;
+        font-size: 1rem;
+        color: $text-color;
+        line-height: 1.75;
+    }
+    &__text--bottom {
+        margin-top: 20px;
+        &::after {
+            content: "";
+            display: block;
+            height: 2px;
+            background-color: $special-effect-color;
+            margin-top: 40px;
+        }
+    }
+}
+
+.footer-page {
+    margin-top: 7em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .main-content {
+        display: inline-block;
+    }
+    .social-links {
+        max-width: 350px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        &__link {
+            font-family: $font-fam-text;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: $text-color;
+            transition: $transition;
+            &:hover {
+                color: $special-effect-color;
+            }
+        }
+    }
+}
