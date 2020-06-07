@@ -484,6 +484,8 @@ a {
   max-width: 315px;
   width: 100%;
   margin-left: 20px;
+  position: relative;
+  top: -4px;
 }
 
 .experience__date,
