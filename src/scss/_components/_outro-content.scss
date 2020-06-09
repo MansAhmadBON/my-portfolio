@@ -45,5 +45,14 @@
                 color: $special-effect-color;
             }
         }
+        @media(max-width: 769px) {
+            flex-direction: column;
+            height: 130px;
+            text-align: center;
+        }
+    }
+    @media (max-width: 500px) {
+        flex-direction: column;
+        margin-top: 5em;
     }
 }
