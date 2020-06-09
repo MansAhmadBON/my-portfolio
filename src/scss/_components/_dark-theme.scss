@@ -1,0 +1,18 @@
+.dark-theme--section-header--odd {
+    background-color: #2b2c2c;
+    @media(max-width: 1100px) {
+        background-color: #2b2c2c;
+    }
+}
+
+.dark-theme--section-header--even  {
+    background-color: #292a2a;
+}
+
+.dark-theme--section-content--odd {
+    background-color: #2d2e2e;
+}
+
+.dark-theme--section-content--even {
+    background-color: #2b2c2c;
+}

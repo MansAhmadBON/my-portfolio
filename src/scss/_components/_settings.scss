@@ -12,6 +12,10 @@
     bottom: 10%;
     left: 5%;
     opacity: .5;
+    transition: .5s ease-in;
+    &:hover {
+        transform: rotate(360deg);
+    }
     @media (max-width: 400px) {
         top: 2%;
     }
@@ -71,3 +75,8 @@
 .settings--active {
     display: block;
 }
+
+.settings-ctrl--hide {
+    display: none;
+}
+
