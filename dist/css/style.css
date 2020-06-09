@@ -698,6 +698,90 @@ a {
   color: #f8bb10;
 }
 
+.settings-ctrl {
+  display: block;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-image: url("../assets/img/technology.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  bottom: 10%;
+  left: 5%;
+  opacity: .5;
+}
+
+.settings {
+  display: none;
+  padding: 20px;
+  position: fixed;
+  bottom: 10%;
+  left: 5%;
+  max-width: 200px;
+  background-color: #fff;
+  z-index: 99999;
+  -webkit-box-shadow: 0 0 10px 5px #dddddd;
+          box-shadow: 0 0 10px 5px #dddddd;
+}
+
+.settings .language span,
+.settings .theme span {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #727272;
+  text-transform: uppercase;
+}
+
+.settings .language button,
+.settings .theme button {
+  margin: 10px auto;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  display: block;
+  color: #939393;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.settings .language button:hover,
+.settings .theme button:hover {
+  color: #f8bb10;
+}
+
+.settings .language {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.settings .theme {
+  text-align: center;
+}
+
+.settings .close {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 2px solid #f8bb10;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #727272;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.settings .close:hover {
+  color: #f8bb10;
+}
+
+.settings--active {
+  display: block;
+}
+
 @media (max-width: 1100px) {
   .section-container {
     -webkit-box-orient: vertical;
@@ -854,5 +938,11 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 5em;
+  }
+}
+
+@media (max-width: 400px) {
+  .settings-ctrl {
+    top: 2%;
   }
 }

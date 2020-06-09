@@ -1,0 +1,73 @@
+@import "../_base/vars";
+
+.settings-ctrl {
+    display: block;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-image: url("../assets/img/technology.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: 10%;
+    left: 5%;
+    opacity: .5;
+    @media (max-width: 400px) {
+        top: 2%;
+    }
+}
+
+.settings {
+    display: none;
+    padding: 20px;
+    position: fixed;
+    bottom: 10%;
+    left: 5%;
+    max-width: 200px;
+    background-color: #fff;
+    z-index: 99999;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+    .language span, .theme span{
+        font-family: $font-fam-titles;
+        font-size: 20px;
+        font-weight: bold;
+        color: $text-h2-color;
+        text-transform: uppercase;
+    }
+    .language button, .theme button {
+        margin: 10px auto;
+        font-family: $font-fam-titles;
+        font-size: 18px;
+        display: block;
+        color: $text-color;
+        transition: $transition;
+        &:hover {
+            color: $special-effect-color;
+        }
+    }
+    .language {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .theme {
+        text-align: center;
+    }
+   .close {
+       margin-top: 20px;
+       padding-top: 10px;
+       border-top: 2px solid $special-effect-color;
+       width: 100%;
+       font-family: $font-fam-titles;
+       font-size: 16px;
+       font-weight: bold;
+       color: $text-h2-color;
+       transition: $transition;
+       &:hover {
+           color: $special-effect-color;
+       }
+    }
+}
+
+.settings--active {
+    display: block;
+}
