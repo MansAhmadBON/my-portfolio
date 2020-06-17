@@ -26,7 +26,8 @@ const path = {
         js: `${projectFolder}/js/`,
         img: `${projectFolder}/assets/img/`,
         fonts: `${projectFolder}/assets/fonts/`,
-        json: `${projectFolder}/assets/json/`
+        json: `${projectFolder}/assets/json/`,
+        jsLibs: `${projectFolder}/js/libs/`
     },
     src: {
         html: [`${sourceFolder}/*.html`, '!' + sourceFolder + '/_*.html'],
@@ -35,6 +36,7 @@ const path = {
         img: `${sourceFolder}/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}`,
         fonts: `${sourceFolder}/fonts/*.ttf`,
         json: `${sourceFolder}/**/*.json`,
+        jsLibs: `${sourceFolder}/js/libs/*.js`
     },
     watch: {
         html: `${sourceFolder}/**/*.html`,
@@ -85,6 +87,7 @@ function css() {
 
 function js() {
     src(path.src.json).pipe(dest(path.build.json));
+    src(path.src.jsLibs).pipe(dest(path.build.jsLibs));
     return src(path.src.js)
         .pipe(fileInclude())
         .pipe(dest(path.build.js))

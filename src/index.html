@@ -7,6 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <script src="./js/libs/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <link rel="stylesheet" href="./css/style.min.css">
     <title>Portfolio</title>
 </head>
@@ -32,7 +37,7 @@
         <button class="settings-ctrl"></button>
     </aside>
     <div class="section-content main-box">
-        <main class="main-content">
+        <main class="main-content wow animate__animated animate__fadeInDownBig">
             <h1>
                 <span class="main-content__text" data-i18n>mansur</span>
                 <span class="main-content__text main-content__text--gold" data-i18n>ahmad</span>
@@ -43,7 +48,7 @@
         <div class="my-cv">
             <a href="#" download target="_blank" data-i18n>DOWNLOAD CV</a>
         </div>
-        <ul class="common-info">
+        <ul class="common-info wow animate__animated animate__fadeInUpBig">
             <li class="common-info__item common-info__item--1">
                 <span class="common-info__title" data-i18n>Location</span>
                 <span class="common-info__content" data-i18n>Minsk, Belarus</span>
@@ -66,8 +71,8 @@
 
 <section class="section-container about-section">
     <aside class="section-header section-header--even section-header--common">
-        <h2 class="section-header__title" data-i18n>INTRO</h2>
-        <span class="section-header__sub-title" data-i18n>What I am all about.</span>
+        <h2 class="section-header__title  wow animate__animated animate__fadeInRight" data-i18n>INTRO</h2>
+        <span class="section-header__sub-title  wow animate__animated animate__fadeInRight" data-i18n>What I am all about.</span>
     </aside>
     <div class="section-content section-content--even about-content">
         <p class="about-content__text" data-i18n>My name is Mansur. I am very passionate about creating application interfaces, to do this, I constantly practice and improve my skills. I love the Front-End very much. I want work to contribute to my professional growth.</p>
@@ -87,13 +92,13 @@
 
 <section class="section-container skills-section">
     <aside class="section-header section-header--odd section-header--common">
-        <h2 class="section-header__title" data-i18n>Skills</h2>
-        <span class="section-header__sub-title" data-i18n>Progress bars, anyone?</span>
+        <h2 class="section-header__title  wow animate__animated animate__fadeInRight" data-i18n>Skills</h2>
+        <span class="section-header__sub-title  wow animate__animated animate__fadeInRight" data-i18n>This is just the beginning!</span>
     </aside>
     <div class="section-content section-content--odd skills-content">
         <ul class="skills-list">
             <li class="skills-list__item skills-list__item--html">
-                <span class="skills-list__percent skills-list__percent--html">85%</span>
+                <span class="skills-list__percent skills-list__percent--html">90%</span>
                 <span class="skills-list__skill-name skills-list__skill-name--html">HTML</span>
                 <div class="progress-bar">
                     <div class="progress-bar__track">
@@ -111,7 +116,7 @@
                 </div>
             </li>
             <li class="skills-list__item skills-list__item--js">
-                <span class="skills-list__percent skills-list__percent--js">80%</span>
+                <span class="skills-list__percent skills-list__percent--js">75%</span>
                 <span class="skills-list__skill-name skills-list__skill-name--js">JavaScript</span>
                 <div class="progress-bar">
                     <div class="progress-bar__track">
@@ -120,7 +125,7 @@
                 </div>
             </li>
             <li class="skills-list__item skills-list__item--ts">
-                <span class="skills-list__percent skills-list__percent--ts">50%</span>
+                <span class="skills-list__percent skills-list__percent--ts">40%</span>
                 <span class="skills-list__skill-name skills-list__skill-name--ts">TypeScript</span>
                 <div class="progress-bar">
                     <div class="progress-bar__track">
@@ -129,7 +134,7 @@
                 </div>
             </li>
             <li class="skills-list__item skills-list__item--react">
-                <span class="skills-list__percent skills-list__percent--react">75%</span>
+                <span class="skills-list__percent skills-list__percent--react">70%</span>
                 <span class="skills-list__skill-name skills-list__skill-name--react">React</span>
                 <div class="progress-bar">
                     <div class="progress-bar__track">
@@ -170,8 +175,8 @@
 
 <section class="section-container experience-section">
     <aside class="section-header section-header--even section-header--common">
-        <h2 class="section-header__title" data-i18n>EXPERIENCE</h2>
-        <span class="section-header__sub-title" data-i18n>Yes. I've been around.</span>
+        <h2 class="section-header__title wow animate__animated animate__fadeInRight" data-i18n>EXPERIENCE</h2>
+        <span class="section-header__sub-title  wow animate__animated animate__fadeInRight" data-i18n>Happy time</span>
     </aside>
     <div class="section-content section-content--even experience-content">
         <div class="experience">
@@ -190,8 +195,8 @@
 
 <section class="section-container education-section">
     <aside class="section-header section-header--odd section-header--common">
-        <h2 class="section-header__title" data-i18n>EDUCATION</h2>
-        <span class="section-header__sub-title" data-i18n>Lazy isn't in my vocabulary.</span>
+        <h2 class="section-header__title wow animate__animated animate__fadeInRight" data-i18n>EDUCATION</h2>
+        <span class="section-header__sub-title wow animate__animated animate__fadeInRight" data-i18n>Lazy isn't in my vocabulary.</span>
     </aside>
     <div class="section-content section-content--odd education-content">
         <div class="experience education-item--teachMeSkills">
@@ -223,8 +228,8 @@
 
 <section class="section-container portfolio-section">
     <aside class="section-header section-header--even section-header--common">
-        <h2 class="section-header__title" data-i18n>PORTFOLIO</h2>
-        <span class="section-header__sub-title" data-i18n>Here it gets interesting.</span>
+        <h2 class="section-header__title wow animate__animated animate__fadeInRight" data-i18n>PORTFOLIO</h2>
+        <span class="section-header__sub-title wow animate__animated animate__fadeInRight" data-i18n>Here it gets interesting.</span>
     </aside>
     <div class="section-content section-content--even portfolio-content">
         <ul class="portfolio-list">
@@ -322,23 +327,23 @@
 
 <section class="section-container outro-section">
     <aside class="section-header section-header--odd section-header--common">
-        <h2 class="section-header__title" data-i18n>OUTRO</h2>
-        <span class="section-header__sub-title" data-i18n>Call me, maybe.</span>
+        <h2 class="section-header__title wow animate__animated animate__fadeInRight" data-i18n>OUTRO</h2>
+        <span class="section-header__sub-title wow animate__animated animate__fadeInRight" data-i18n>Call me, maybe.</span>
     </aside>
     <div class="section-content section-content--odd outro-content">
         <div class="wrapper-content">
             <p class="outro-content__text" data-i18n>
-                In addition to working on projects, I practice in solving algorithmic problems on the codewars platform. I attend conferences to keep abreast of the latest development trends.
+                In addition to working on projects, I practice in solving algorithmic problems on the codewars platform. I attend conferences, read articles on specialized resources to keep abreast of the latest development trends.
             </p>
             <p class="outro-content__text outro-content__text--bottom" data-i18n>
                 My primary goal is to create something beautiful, convenient and functional interfaces, setting myself more complex tasks with people that bring out the best in me.
             </p>
             <footer class="footer-page">
-                <div class="main-content">
+                <div class="main-content wow animate__animated animate__fadeInUp">
                     <span class="main-content__text" data-i18n>mansur</span>
                     <span class="main-content__text main-content__text--gold" data-i18n>ahmad</span>
                 </div>
-                <ul class="social-links">
+                <ul class="social-links wow animate__animated animate__fadeInUp">
                     <li class="social-links__item">
                         <a class="social-links__link" href="https://github.com/MansAhmadBON" target="_blank">Github</a>
                     </li>
@@ -356,6 +361,7 @@
         </div>
     </div>
 </section>
+
 
 <script src="./js/index.min.js"></script>
 </body>

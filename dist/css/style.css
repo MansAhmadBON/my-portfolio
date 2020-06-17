@@ -428,7 +428,7 @@ a {
 }
 
 .progress-bar__line--html {
-  width: 80%;
+  width: 90%;
 }
 
 .progress-bar__line--css {
@@ -436,15 +436,15 @@ a {
 }
 
 .progress-bar__line--js {
-  width: 80%;
+  width: 75%;
 }
 
 .progress-bar__line--ts {
-  width: 50%;
+  width: 40%;
 }
 
 .progress-bar__line--react {
-  width: 75%;
+  width: 70%;
 }
 
 .progress-bar__line--git {
